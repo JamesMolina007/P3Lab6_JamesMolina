@@ -13,6 +13,5 @@ class numero{
     virtual numero operator-(numero num2);
     virtual numero operator+(numero num2);
     virtual numero operator*(numero num2);
-    virtual string toString();
     void convertido( string num );
 };

@@ -3,15 +3,8 @@
 
 using namespace std;
 
-hexadecimal::hexadecimal(){
-}
-
-hexadecimal::hexadecimal( string numero ){
-
-}
-
 hexadecimal::numero operator+(numero num2){
-  
+  *this, num2;
 }
 
 hexadecimal::numero operator-(numero num2){
