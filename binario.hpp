@@ -5,14 +5,15 @@
 using namespace std;
 
 class binario : public numero{
-  protected:
+protected:
     string num;
     int convertido;
   public:
     binario();
-    numero operator-(numero num2);
-    numero operator+(numero num2);
-    numero operator*(numero num2);
+    binario( string num );
+  //  int operator-(numero num2);
+//    int operator+(numero num2);
+  //  int operator*(numero num2);
     string toString();
-    void convertir();
+    void convertir( string num );
 };

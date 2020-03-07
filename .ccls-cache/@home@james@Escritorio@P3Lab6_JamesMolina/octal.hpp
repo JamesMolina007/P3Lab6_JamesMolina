@@ -10,9 +10,10 @@ class octal : public numero{
     int convertido;
   public:
     octal();
-    numero operator-(numero num2);
-    numero operator+(numero num2);
-    numero operator*(numero num2);
+    octal( string num );
+    //int operator-(numero num2);
+    //int operator+(numero num2);
+    //int operator*(numero num2);
     string toString();
-    void convertir();
+    void convertir( string num );
 };

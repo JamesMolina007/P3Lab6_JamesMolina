@@ -4,14 +4,15 @@
 using namespace std;
 
 class numero{
-  friend ostream &operator << (ostream &, const numero &);
-  int entero;
+//  friend ostream &operator << (ostream &, const numero &);
   string original;
   public:
+    char tipo;
+    int entero;
     numero();
     numero( string num );
-    virtual numero operator-(numero num2);
-    virtual numero operator+(numero num2);
-    virtual numero operator*(numero num2);
-    void convertido( string num );
+    virtual int operator-(numero num2);
+    virtual int operator+(numero num2);
+    virtual int operator*(numero num2);
+    //void convertido( string num );
 };

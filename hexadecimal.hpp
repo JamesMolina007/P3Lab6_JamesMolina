@@ -6,12 +6,14 @@ using namespace std;
 
 class hexadecimal : public numero{
   protected:
-    numero num;
+    string num;
+    int convertido;
   public:
     hexadecimal();
-    numero operator-(numero num2);
-    numero operator+(numero num2);
-    numero operator*(numero num2);
+    hexadecimal( string numero );
+    //int operator-(numero num2);
+    //int operator+(numero num2);
+    //int operator*(numero num2);
     string toString();
-    void convertir();
+    void convertir( string num);
 };
