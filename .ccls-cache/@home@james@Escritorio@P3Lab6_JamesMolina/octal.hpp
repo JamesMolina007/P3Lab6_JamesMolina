@@ -11,9 +11,6 @@ class octal : public numero{
   public:
     octal();
     octal( string num );
-    //int operator-(numero num2);
-    //int operator+(numero num2);
-    //int operator*(numero num2);
     string toString();
     void convertir( string num );
 };

@@ -7,19 +7,7 @@ binario::binario( string num ){
   this->num = num;
   convertir( num );
 }
-
-/*int numero::operator-(numero num2){
-  return (*this).entero - num2.entero;
-}
-
-int numero::operator+(numero num2){
-  return (*this).entero + num2.entero;
-}
-
-int numero::operator*(numero num2){
-  return (*this).entero * num2.entero;
-}*/
-
+  
 void binario::convertir(string num){
   string bin = "";
   tipo = 'b';

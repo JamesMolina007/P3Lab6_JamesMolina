@@ -4,7 +4,6 @@
 using namespace std;
 
 class numero{
-//  friend ostream &operator << (ostream &, const numero &);
   string original;
   public:
     char tipo;
@@ -14,5 +13,4 @@ class numero{
     virtual int operator-(numero num2);
     virtual int operator+(numero num2);
     virtual int operator*(numero num2);
-    //void convertido( string num );
 };

@@ -11,9 +11,6 @@ protected:
   public:
     binario();
     binario( string num );
-  //  int operator-(numero num2);
-//    int operator+(numero num2);
-  //  int operator*(numero num2);
     string toString();
     void convertir( string num );
 };

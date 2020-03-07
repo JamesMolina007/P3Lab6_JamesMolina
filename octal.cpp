@@ -5,19 +5,8 @@ using namespace std;
 
 octal::octal( string num ){
   this->num = num;
+  convertir( num );
 }
-
-/*int numero::operator-(numero num2){
-  return (*this).entero - num2.entero;
-}
-
-int numero::operator+(numero num2){
-  return (*this).entero + num2.entero;
-}
-
-int numero::operator*(numero num2){
-  return (*this).entero * num2.entero;
-}*/
 
 void octal::convertir( string num ){
   string oct = "";

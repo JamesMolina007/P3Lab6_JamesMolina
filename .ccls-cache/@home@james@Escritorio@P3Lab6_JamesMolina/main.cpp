@@ -70,21 +70,18 @@ void operar(){
               binario baux( numeros[num1] );
               n1 = baux;
               n1.tipo = 'b';
-              cout << "Tipo: " << n1.tipo << " Valo: " << n1.entero << endl;
               break;
     }
     case 'o':{
               octal oaux( numeros[num1] );
               n1 = oaux;
               n1.tipo = 'o';
-              cout << "Tipo: " << n1.tipo << " Valo: " << n1.entero << endl;
               break;
     }
     case 'h':{
             hexadecimal haux( numeros[num1] );
             n1 = haux;
             n1.tipo = 'h';
-            cout << "Tipo: " << n1.tipo << " Valo: " << n1.entero << endl;
             break;
     }
     case 'e':{
@@ -155,7 +152,8 @@ string formato( int resultado ){
             }
             break;
     case 'h':{
-              formato = hexa( resultado );
+              formato = "0x";
+              formato += hexa( resultado );
               break;
             }
 
@@ -190,8 +188,7 @@ int octales( int numero ){
 }
 
 string hexa( int numero ){
-  string acum= "";
-  char letras[100];
+  string acum = "";
   char letra;
   int i = 0;
   while( numero !=0){
