@@ -122,22 +122,17 @@ void operar(){
 }
 
 void suma(){
-  cout << n1.entero << endl;
-  cout << n2.entero << endl;
-  int s = n1.entero + n2.entero;
-  cout << "S " << s << endl;
+  int s = n1 + n2;
   cout << "Resultado: " << formato(s) << endl;
 }
 
 void resta(){
-  int r = n1.entero - n2.entero;
-  cout << "r " << r << endl;
+  int r = n1 - n2;
   cout << "Resultado: " << formato(r) << endl;
 }
 
 void multiplicacion(){
-  int m =  n1.entero * n2.entero;
-  cout << "m " << m << endl;
+  int m =  n1 * n2;
   cout << "Resultado: " << formato(m) << endl;
 }
 
